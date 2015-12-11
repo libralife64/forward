@@ -1,31 +1,31 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="movement_forward" id="1" x="11" y="20">
     <next>
-      <block type="robot_delay" id="145" inline="true">
+      <block type="robot_delay" id="2" inline="true">
         <value name="DELAY">
-          <block type="math_number" id="152">
+          <block type="math_number" id="3">
             <field name="NUM">5000</field>
           </block>
         </value>
         <next>
-          <block type="controls_if" id="74" inline="false">
+          <block type="controls_if" id="4" inline="false">
             <value name="IF0">
-              <block type="sensor_object" id="81">
+              <block type="sensor_object" id="5">
                 <field name="OBJECT">LEFTFRONT</field>
               </block>
             </value>
             <statement name="DO0">
-              <block type="movement_right" id="91"></block>
+              <block type="movement_right" id="6"></block>
             </statement>
             <next>
-              <block type="controls_if" id="107" inline="false">
+              <block type="controls_if" id="7" inline="false">
                 <value name="IF0">
-                  <block type="sensor_object" id="115">
+                  <block type="sensor_object" id="8">
                     <field name="OBJECT">RIGHTFRONT</field>
                   </block>
                 </value>
                 <statement name="DO0">
-                  <block type="movement_left" id="125"></block>
+                  <block type="movement_left" id="9"></block>
                 </statement>
               </block>
             </next>
